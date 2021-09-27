@@ -11,12 +11,12 @@ The interactions and behaviour between these screens are outlined below:
 1. On Home screen, tapping the Back button in bottom navigation should close the app.
 1. On subsequent app launches, the Welcome screen should not show.
 
-See gif below describing the behaviour, notes:
+See gif below describing the behaviour:
+https://s9.gifyu.com/images/device-2021-09-03-113459.gif
+Notes:
 * *Gif starts with behaviour from step 1-4*
 * *Then shows the step 5 behaviour*
 * *Gif then loops indefinitely*
-
-<img src="https://s9.gifyu.com/images/device-2021-09-03-113459.gif" alt="behaviour video" width="400"/>
 
 ## Instructions
 1. Create a new branch off `main` and implement your solution in the new branch.

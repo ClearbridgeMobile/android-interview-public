@@ -19,8 +19,10 @@ Notes:
 * *Gif then loops indefinitely*
 
 ## Instructions
+1. Fork the repo, make sure it's public.
 1. Create a new branch off `main` and implement your solution in the new branch.
-2. You can use resources found in the `res` folder.
-3. Possible approaches: Compose, Single Activity Multiple Fragments, Multiple Activities, etc.
-4. Once you are done, make sure to create a PR merging into `main`.
-5. Make sure the solution is demo-able using emulator.
+1. You can use resources found in the `res` folder.
+1. Possible approaches: Compose, Single Activity Multiple Fragments, Multiple Activities, etc.
+1. Once you are done, make sure to create a PR merging into `main`.
+1. Make sure the solution is demo-able using emulator.
+1. Send us the link to the PR

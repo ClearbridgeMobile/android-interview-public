@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Interview</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_instructions">Please click OK to proceed</string>
+    <string name="ok">OK</string>
+    <string name="home_hi">Hi there</string>
+    <string name="home_time">The time now is %1$s</string>
+    <string name="key_welcome_clicked">key_welcome_clicked</string>
+</resources>

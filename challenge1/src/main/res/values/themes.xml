@@ -19,7 +19,15 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="SplashTheme" >
+        <item name="windowSplashScreenBackground">@color/purple_200</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_live_tv_48</item>
+        <item name="postSplashScreenTheme">@style/Theme.AndroidInterview.NoActionBar</item>
+    </style>
+
     <style name="Theme.AndroidInterview.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AndroidInterview.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
 </resources>

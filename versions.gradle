@@ -1,0 +1,23 @@
+ext {
+
+    versions = [
+            compose : "1.0.0-beta08",
+            gradle_tools : "7.0.3",
+            kotlin_plugin : "1.5.31",
+            nav : "2.4.0-beta02",
+            app_compat : "1.4.0",
+            kotlin : "1.7.0",
+            material : "1.4.0",
+            junit : "4.13.2",
+            compose_activity : "1.4.0",
+            compose_material : "1.0.5",
+            compose_animation : "1.0.5",
+            compose_ui_tool : "1.0.5",
+            compose_viewmodel : "2.4.0",
+            compose_ui_test : "1.0.5",
+            compose_navigation : "2.4.0-beta02",
+            compose_livedata : "1.1.0-beta03",
+            datastore : "1.0.0"
+
+    ]
+}

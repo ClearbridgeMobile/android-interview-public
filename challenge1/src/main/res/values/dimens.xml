@@ -2,4 +2,12 @@
 <resources>
     <dimen name="spacer">10dp</dimen>
     <dimen name="icon_size">96dp</dimen>
+    <dimen name="counter_size">32dp</dimen>
+
+    <!-- header-->
+    <dimen name="header_size">42dp</dimen>
+    <dimen name="header_margin_top">8dp</dimen>
+
+    <!-- body -->
+    <dimen name="body_size">16dp</dimen>
 </resources>

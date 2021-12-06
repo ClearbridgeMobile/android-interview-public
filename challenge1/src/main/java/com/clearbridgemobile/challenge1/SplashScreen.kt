@@ -20,7 +20,7 @@ class SplashScreen :AppCompatActivity() {
             finish()
         }, 3000)
     }
-//ANOTHER METHOD
+//ANOTHER METHOD LOADING MAIN ACTIVITY
 //        setContentView(R.layout.activity_splash)
 //        Handler().postDelayed({
 //            // This method will be executed once the timer is over

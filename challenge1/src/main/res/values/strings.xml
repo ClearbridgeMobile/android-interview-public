@@ -5,6 +5,11 @@
     <string name="welcome_instructions">Please click OK to proceed</string>
     <string name="ok">OK</string>
     <string name="home_hi">Hi there</string>
-    <string name="home_time">The time now is %1$s</string>
+    <string name="home_time">The time now is </string>
     <string name="key_welcome_clicked">key_welcome_clicked</string>
+    <string name="click_me">Click Me!!</string>
+    <string name="welcome_to_home_screen">WELCOME TO HOME SCREEN</string>
+    <string name="todo">TODO</string>
+
+
 </resources>

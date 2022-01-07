@@ -2,4 +2,5 @@
 <resources>
     <dimen name="spacer">10dp</dimen>
     <dimen name="icon_size">96dp</dimen>
+    <dimen name="text_size">16dp</dimen>
 </resources>

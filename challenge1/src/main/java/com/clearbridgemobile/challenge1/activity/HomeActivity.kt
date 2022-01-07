@@ -16,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        (resources.getString(R.string.time) + " " + getCurrentTime()).also {
+        (resources.getString(R.string.home_time, getCurrentTime())).also {
             binding.txtTime.text = it
         }
     }

@@ -6,8 +6,4 @@
     <string name="ok">OK</string>
     <string name="home_hi">Hi there</string>
     <string name="home_time">The time now is %1$s</string>
-    <string name="key_welcome_clicked">key_welcome_clicked</string>
-    <string name="message">Please click OK to proceed</string>
-    <string name="helloworld">Hi there!</string>
-    <string name="time">"The time now is "</string>
 </resources>

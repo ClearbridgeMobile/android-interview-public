@@ -18,10 +18,13 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 import kotlinx.coroutines.delay
 
 @Composable
-fun AnimatedSplashScreen() {
+fun AnimatedSplashScreen(
+    navController: NavController,
+) {
     var startAnimation by remember { mutableStateOf(false) }
     val alphaAnim = animateFloatAsState(
         targetValue = if (startAnimation) 1f else 0f,
@@ -33,6 +36,8 @@ fun AnimatedSplashScreen() {
     LaunchedEffect(key1 = true) {
         startAnimation = true
         delay(4000)
+        navController.popBackStack()
+        navController.navigate(Screen.Welcome.route)
     }
 
     SplashScreen(alpha = alphaAnim.value)

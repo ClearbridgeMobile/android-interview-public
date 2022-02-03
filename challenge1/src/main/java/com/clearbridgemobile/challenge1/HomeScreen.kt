@@ -1,5 +1,6 @@
 package com.clearbridgemobile.challenge1
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -13,6 +14,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import kotlin.system.exitProcess
 
 @Composable
 fun HomeScreen() {
@@ -31,6 +33,10 @@ fun HomeScreen() {
             Text(text = stringResource(id = R.string.home_hi))
             Text(text = stringResource(id = R.string.home_time).format(getCurrentTime()))
         }
+    }
+
+    BackHandler(enabled = true) {
+        exitProcess(0)
     }
 }
 

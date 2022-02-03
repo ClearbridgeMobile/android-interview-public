@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
-import java.util.*
 
 class MainActivity : ComponentActivity() {
 
@@ -17,5 +16,4 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    fun getCurrentTime(): Date = Calendar.getInstance().time
 }

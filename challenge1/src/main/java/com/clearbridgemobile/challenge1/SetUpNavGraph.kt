@@ -17,7 +17,7 @@ fun SetUpNavGraph(
             AnimatedSplashScreen(navController)
         }
         composable(route = Screen.Welcome.route) {
-            WelcomeScreen()
+            WelcomeScreen(navController)
         }
         composable(route = Screen.Home.route) {
             HomeScreen()

@@ -15,9 +15,23 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
 
 @Composable
-fun WelcomeScreen() {
+fun WelcomeScreen(
+    navController: NavController,
+) {
+    WelcomeScreen(
+        onClickOkButton = {
+            navController.navigate(Screen.Home.route)
+        }
+    )
+}
+
+@Composable
+fun WelcomeScreen(
+    onClickOkButton: () -> Unit,
+) {
     Box(
         modifier = Modifier
             .background(colorResource(id = R.color.teal_200))
@@ -36,9 +50,7 @@ fun WelcomeScreen() {
                 colors = ButtonDefaults.textButtonColors(
                     backgroundColor = colorResource(id = R.color.purple_200)
                 ),
-                onClick = {
-                    //TODO:
-                }
+                onClick = onClickOkButton
             ) {
                 Text(text = stringResource(id = R.string.ok), color = colorResource(id = R.color.white))
             }
@@ -49,5 +61,5 @@ fun WelcomeScreen() {
 @Preview
 @Composable
 fun WelcomeScreenPreview() {
-    WelcomeScreen()
+    WelcomeScreen {}
 }

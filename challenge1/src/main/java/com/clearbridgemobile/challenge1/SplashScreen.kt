@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -24,6 +25,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun AnimatedSplashScreen(
     navController: NavController,
+    viewModel: MainActivityViewModel,
 ) {
     var startAnimation by remember { mutableStateOf(false) }
     val alphaAnim = animateFloatAsState(
@@ -33,11 +35,18 @@ fun AnimatedSplashScreen(
         )
     )
 
+    val state = viewModel.state.collectAsState()
     LaunchedEffect(key1 = true) {
         startAnimation = true
         delay(4000)
         navController.popBackStack()
         navController.navigate(Screen.Welcome.route)
+
+        if (state.value.status == WelcomeScreenStatus.NEVER_SHOWN) {
+            navController.navigate(Screen.Welcome.route)
+        } else {
+            navController.navigate(Screen.Home.route)
+        }
     }
 
     SplashScreen(alpha = alphaAnim.value)

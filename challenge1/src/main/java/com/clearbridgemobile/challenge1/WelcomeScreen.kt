@@ -17,13 +17,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 
+enum class WelcomeScreenStatus {
+    SHOWN, NEVER_SHOWN
+}
+
 @Composable
 fun WelcomeScreen(
     navController: NavController,
+    viewModel: MainActivityViewModel,
 ) {
     WelcomeScreen(
         onClickOkButton = {
             navController.navigate(Screen.Home.route)
+            viewModel.onOkButtonClicked()
         }
     )
 }

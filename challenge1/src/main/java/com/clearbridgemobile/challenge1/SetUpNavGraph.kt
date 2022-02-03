@@ -7,17 +7,18 @@ import androidx.navigation.compose.composable
 
 @Composable
 fun SetUpNavGraph(
-    navController: NavHostController
+    navController: NavHostController,
+    viewModel: MainActivityViewModel
 ) {
     NavHost(
         navController = navController,
         startDestination = Screen.Splash.route
     ) {
         composable(route = Screen.Splash.route) {
-            AnimatedSplashScreen(navController)
+            AnimatedSplashScreen(navController, viewModel)
         }
         composable(route = Screen.Welcome.route) {
-            WelcomeScreen(navController)
+            WelcomeScreen(navController, viewModel)
         }
         composable(route = Screen.Home.route) {
             HomeScreen()

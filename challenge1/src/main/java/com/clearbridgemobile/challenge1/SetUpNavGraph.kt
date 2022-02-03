@@ -14,7 +14,7 @@ fun SetUpNavGraph(
         startDestination = Screen.Splash.route
     ) {
         composable(route = Screen.Splash.route) {
-            SplashScreen()
+            AnimatedSplashScreen()
         }
         composable(route = Screen.Welcome.route) {
             WelcomeScreen()

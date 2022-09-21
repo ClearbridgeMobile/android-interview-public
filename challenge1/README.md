@@ -11,8 +11,10 @@ The interactions and behaviour between these screens are outlined below:
 1. On Home screen, tapping the Back button in bottom navigation should close the app.
 1. On subsequent app launches, the Welcome screen should not show.
 
-See gif below describing the behaviour:
-https://s9.gifyu.com/images/device-2021-09-03-113459.gif
+See attached mpg and gif below describing the behaviour:
+* coding-challenge-1.mp4
+* coding-challenge-1.gif
+
 Notes:
 * *Gif starts with behaviour from step 1-4*
 * *Then shows the step 5 behaviour*
@@ -26,3 +28,8 @@ Notes:
 1. Once you are done, make sure to create a PR merging into `main`.
 1. Make sure the solution is demo-able using emulator.
 1. Send us the link to the PR
+
+
+https://user-images.githubusercontent.com/17550988/191587166-720480d3-c3a5-43b4-bc1e-5d71b113aa13.mp4
+![coding-challenge-1](https://user-images.githubusercontent.com/17550988/191587320-3973196f-a08c-4946-9a6a-b750862a01a5.gif)
+

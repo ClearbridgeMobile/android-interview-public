@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="splash_screen_bg">
+        <item name="android:background">@color/purple_200</item>
+    </style>
+
+    <style name="home_screen_bg">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="welcome_screen_bg">
+        <item name="android:background">@color/teal_200</item>
+    </style>
+
+
+    <style name="body">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

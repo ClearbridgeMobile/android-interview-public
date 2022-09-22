@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.clearbridgemobile.challenge1"
-        minSdk 21
+        minSdk 23
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -31,6 +31,12 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    viewBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding true
     }
 }
 
@@ -56,7 +62,10 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
 
+
+
     //dagger hilt
     implementation 'com.google.dagger:hilt-android:2.40'
     kapt 'com.google.dagger:hilt-compiler:2.40'
+
 }

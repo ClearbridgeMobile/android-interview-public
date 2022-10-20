@@ -6,11 +6,17 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.util.*
 
 class MainViewModel: ViewModel() {
 
+    //Variable to keep track of spalsh screen loading
     private val _isLoading = MutableLiveData(true)
     val isLoading: LiveData<Boolean> get() =  _isLoading
+
+    // to keep track of button click even on Welcome screen
+    private val _isOKClickedMutableLiveData = MutableLiveData<Boolean>()
+    val isOkClickedLiveData: LiveData<Boolean> get() = _isOKClickedMutableLiveData
 
     init {
         viewModelScope.launch {
@@ -22,5 +28,11 @@ class MainViewModel: ViewModel() {
         }
     }
 
+    // Will be called once Ok button is clicked from Welcome screen
+    fun setIsOkClickedItem(isOkCLicked: Boolean) {
+        _isOKClickedMutableLiveData.value = isOkCLicked
+    }
+
+    fun getCurrentTime(): Date = Calendar.getInstance().time
 
 }

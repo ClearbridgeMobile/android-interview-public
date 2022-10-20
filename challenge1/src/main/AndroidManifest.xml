@@ -8,13 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Application.Start" >
+        android:theme="@style/App.StartTheme" >
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Application.Start">
+            android:theme="@style/App.StartTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
